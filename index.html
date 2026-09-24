@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#06151e" />
+    <meta name="description" content="Adhiyaman K A — founding engineer and senior full-stack engineer building product systems, real-time data platforms, and applied AI." />
+    <title>Adhiyaman K A — Portfolio</title>
+    <style>
+      html, body { margin: 0; min-height: 100%; background: #06151e; }
+      #app { min-height: 100svh; background: #06151e; }
+      #loading-screen { position: fixed; z-index: 20; inset: 0; display: flex; align-items: center; justify-content: center; color: #e9f5f2; background: #06151e; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CZt2wfFM.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CYhyiuER.css">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div id="loading-screen" class="loading-screen" role="status" aria-live="polite" aria-label="Loading the forest">
+        <div class="loading-mark" aria-hidden="true">
+          <span class="loading-mark-core"></span>
+        </div>
+        <p class="loading-kicker">Under the canopy</p>
+        <p class="loading-title">Gathering the light<span class="loading-dots" aria-hidden="true">...</span></p>
+        <div class="loading-track" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="fallback-art" aria-hidden="true"></div>
+      <canvas id="forest-canvas" aria-label="Glowing mushrooms in a moonlit forest"></canvas>
+      <div class="color-wash" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <section id="top" class="entry" aria-labelledby="entry-title">
+          <div class="entry-content">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Founding engineer · Product systems · Applied AI</p>
+            <h1 id="entry-title">Complex underneath.<br /><em>Simple where it matters.</em></h1>
+            <p class="entry-description">I'm Adhi — a senior engineer and engineering co-founder with 6+ years building SaaS, real-time data products, commerce infrastructure, and applied-AI workflows. I work across product, frontend, backend, data, and reliability.</p>
+            <div class="entry-actions">
+              <button id="enter-sound" class="primary-button" type="button" disabled>Explore with sound <span aria-hidden="true">↗</span></button>
+              <button id="enter-silent" class="text-button" type="button" disabled>View silently</button>
+            </div>
+            <p id="loading-message" class="loading-message" role="status">Gathering the light…</p>
+          </div>
+      </section>
+
+      <main>
+
+        <aside class="section-rail" aria-label="Portfolio sections">
+          <span class="section-rail-kicker">Sections</span>
+          <nav>
+            <a href="#about" data-panel="about"><span>01</span> About</a>
+            <a href="#experience" data-panel="experience"><span>02</span> Experience</a>
+            <a href="#skills" data-panel="skills"><span>03</span> Skills</a>
+            <a href="#this-site" data-panel="this-site"><span>04</span> Selected work</a>
+          </nav>
+        </aside>
+
+        <div class="portfolio-content">
+          <section id="about" class="portfolio-section about-section" aria-labelledby="about-title">
+            <div class="section-copy">
+              <h2 id="about-title">I like owning the whole problem, not just one layer.</h2>
+              <p>I started with a strong product and frontend bias, then kept moving deeper into the systems behind the interface. At BusinessOnBot, I joined as one of two founding engineers and helped grow the product from roughly five early adopters to 1,000+ clients. Today, I'm an engineering co-founder at Hamerkop Enerlytics, building real-time software for the GB power market.</p>
+              <p>That path has taken me from Figma and design systems to APIs, event pipelines, databases, CI/CD, observability, reconciliation, and applied AI. I'm at my best when the problem is messy, crosses boundaries, and needs both product judgment and production engineering.</p>
+              <p class="inline-links"><a href="mailto:adhi.adhiyaman@gmail.com">Get in touch <span aria-hidden="true">↗</span></a><a href="https://github.com/adhi729" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/anon729" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></p>
+            </div>
+          </section>
+
+          <section id="experience" class="portfolio-section experience-section" aria-labelledby="experience-title">
+            <!-- <div class="experience-track" aria-label="Professional experience"> -->
+              <article id="experience-platform" class="experience-entry is-active-sub" aria-labelledby="experience-platform-title">
+                <div class="section-copy">
+                  <p class="panel-kicker">02 / Experience</p>
+                  <h2 id="experience-platform-title">From founding engineer to systems at scale.</h2>
+                  <p>At BusinessOnBot, I worked across the product stack as the company grew from roughly five early adopters to 1,000+ clients. I led frontend engineering, turned the Figma component library into a shared production design system, and built a DAG-based visual automation product for WhatsApp and Instagram.</p>
+                  <p>I also architected shopper-intent infrastructure across 500+ Shopify merchants, processing around 5M events a day and more than 30M during peak sale periods without data loss.</p>
+                  <p class="experience-result">5 → 1,000+ clients · 10M+ conversations/month</p>
+                  <p class="panel-meta">React · TypeScript · Node.js · Shopify · Event systems · Release tooling</p>
+                </div>
+              </article>
+              <article id="experience-market" class="experience-entry" aria-labelledby="experience-market-title">
+                <div class="section-copy">
+                  <p class="panel-kicker">03 / Experience</p>
+                  <h2 id="experience-market-title">Engineering real-time market decisions.</h2>
+                  <p>At Hamerkop Enerlytics, I build the platform behind real-time GB power-market analysis: 1500+ parties, and 200K+ events moving through the system each day.</p>
+                  <p>I own the data-integrity and recovery strategy, and traced a downstream calculation slowdown back to InfluxDB write bottlenecks—cutting latency from roughly 8 seconds to under 1 second while increasing peak throughput about 4×.</p>
+                  <p class="experience-result">~8s → &lt;1s latency · ~4× peak throughput</p>
+                  <p class="panel-meta">React · Node.js · Redis · InfluxDB · PostgreSQL · Time-series systems</p>
+                </div>
+              </article>
+            <!-- </div> -->
+          </section>
+
+          <section id="skills" class="portfolio-section skills-section" aria-labelledby="skills-title">
+            <div class="section-copy">
+              <h2 id="skills-title">Product thinking across the stack.</h2>
+              <div class="skills-grid">
+                <div><h3>Product & frontend</h3><p>React · TypeScript · Complex state · Real-time UI · Design systems · Figma-to-code · Playwright</p></div>
+                <div><h3>Backend & data</h3><p>Node.js · Express · GraphQL · PostgreSQL · MongoDB · Redis · InfluxDB · Event processing · Webhooks</p></div>
+                <div><h3>Production engineering</h3><p>AWS · Docker · CI/CD · Release tooling · Rollbacks · Reconciliation · Sentry · New Relic · Failure recovery</p></div>
+                <div><h3>Applied AI</h3><p>LLM workflows · Structured outputs · Embeddings · Retrieval · Tool integrations · Persistent state · Validation · Deterministic controls</p></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="this-site" class="portfolio-section note-section" aria-labelledby="this-site-title">
+            <div class="section-copy">
+              <h2 id="this-site-title">I build products, systems, and experiments that connect the two.</h2>
+              <p><strong>Applied-AI systems</strong> are my current exploration space: multi-stage LLM workflows, embeddings and retrieval, semantic deduplication, persistent workflow state, structured outputs, validation, retries, and deterministic logic around probabilistic models.</p>
+              <p class="note-signoff">The model is one component. The interesting engineering is everything required to make it dependable.</p>
+              <p class="inline-links contact-links"><a href="mailto:adhi.adhiyaman@gmail.com">adhi.adhiyaman@gmail.com <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/anon729" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/adhi729" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></p>
+              <p class="thank-you">Thank you.</p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p class="footer-note"><span class="note-dot" aria-hidden="true"></span> The background is alive</p>
+        <div class="mushroom-keys" aria-label="Mushroom keys">
+          <span class="mushroom-keys-label">Mushrooms</span>
+          <kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd><kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd><kbd>Z</kbd><kbd>X</kbd><kbd>C</kbd>
+        </div>
+        <button id="sound-toggle" class="sound-toggle" type="button" aria-label="Turn sound on" aria-pressed="false" hidden>
+          <span class="sound-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span id="sound-label">Sound off</span>
+        </button>
+        <button id="exit-experience" class="exit-experience" type="button">Immersive <span aria-hidden="true">↗</span></button>
+      </footer>
+    </div>
+  </body>
+</html>
